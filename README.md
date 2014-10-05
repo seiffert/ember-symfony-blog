@@ -20,10 +20,10 @@ You will need the following things properly installed on your computer.
 * `bower install`
 * `vagrant up`
 * `vagrant ssh`
-    * cd /opt/blog
-    * composer install
-    * php app/console doctrine:schema:create
-    * php app/console doctrine:fixtures:load
+    * `cd /opt/blog`
+    * `composer install`
+    * `php app/console doctrine:schema:create`
+    * `php app/console doctrine:fixtures:load`
 
 ## Running / Development
 
