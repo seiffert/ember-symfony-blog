@@ -1,0 +1,19 @@
+posts:
+  pattern: /posts
+  methods: GET
+  defaults: { _controller: SeiffertBlogApiBundle:Post:list}
+
+comments:
+  pattern: /posts/{slug}/comments
+  methods: GET
+  defaults: { _controller: SeiffertBlogApiBundle:Comment:list }
+
+add_comment:
+  pattern: /comments
+  methods: POST
+  defaults: { _controller: SeiffertBlogApiBundle:Comment:add }
+
+remove_comment:
+  pattern: /comments/{id}
+  methods: DELETE
+  defaults: { _controller: SeiffertBlogApiBundle:Comment:remove }

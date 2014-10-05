@@ -1,0 +1,8 @@
+{{#each}}
+    <div class="blog-post">
+        <h1>{{#link-to 'blog.post' slug}}{{title}}{{/link-to}}</h1>
+        <div class="blog-post-content">
+            {{teaser}}
+        </div>
+    </div>
+{{/each}}

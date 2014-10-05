@@ -1,0 +1,14 @@
+<div class="blog-post">
+    <h1>{{#link-to 'blog.post' slug}}{{title}}{{/link-to}}</h1>
+    <div class="blog-post-content">
+        {{body}}
+    </div>
+    <div class="blog-post-comments">
+        {{#each comments}}
+            {{partial 'blog/comment'}}
+        {{/each}}
+        {{partial 'blog/comment-form'}}
+    </div>
+</div>
+
+{{#link-to 'blog.index'}}Zurück zur Liste{{/link-to}}

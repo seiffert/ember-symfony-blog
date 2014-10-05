@@ -1,0 +1,3 @@
+seiffert_blog_api:
+    resource: "@SeiffertBlogApiBundle/Resources/config/routing.yml"
+    prefix:   /api

@@ -1,0 +1,7 @@
+forge "https://forge.puppetlabs.com"
+
+mod 'nodes-php'
+mod 'jfryman-nginx'
+mod 'puppetlabs-mysql'
+mod 'puppetlabs-apt'
+mod 'puppetlabs-git'

@@ -1,0 +1,30 @@
+FORGE
+  remote: https://forge.puppetlabs.com
+  specs:
+    jfryman-nginx (0.0.10)
+      puppetlabs-apt (>= 1.0.0)
+      puppetlabs-concat (>= 1.1.0)
+      puppetlabs-stdlib (>= 3.0.0)
+    nodes-php (0.9.0)
+      puppetlabs-apt (> 0.0.0)
+      puppetlabs-inifile (> 0.0.0)
+      puppetlabs-stdlib (> 0.0.0)
+    puppetlabs-apt (1.6.0)
+      puppetlabs-stdlib (>= 2.2.1)
+    puppetlabs-concat (1.1.0)
+      puppetlabs-stdlib (>= 4.0.0)
+    puppetlabs-git (0.2.0)
+      puppetlabs-vcsrepo (>= 0.1.0)
+    puppetlabs-inifile (1.1.3)
+    puppetlabs-mysql (2.3.1)
+      puppetlabs-stdlib (>= 3.2.0)
+    puppetlabs-stdlib (4.3.2)
+    puppetlabs-vcsrepo (1.1.0)
+
+DEPENDENCIES
+  jfryman-nginx (>= 0)
+  nodes-php (>= 0)
+  puppetlabs-apt (>= 0)
+  puppetlabs-git (>= 0)
+  puppetlabs-mysql (>= 0)
+

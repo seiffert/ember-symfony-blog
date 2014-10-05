@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+
+    <services>
+        <service id="blog_api.listener.serialization" class="Seiffert\Bundle\BlogApiBundle\EventListener\SerializationListener">
+            <argument type="service" id="jms_serializer" />
+            <tag name="kernel.event_listener" event="kernel.view" method="onView" />
+        </service>
+
+        <service id="blog_api.serialization.blog_post_json_serializer" class="Seiffert\Bundle\BlogApiBundle\Serialization\BlogPostJsonSerializationHandler">
+            <argument type="service" id="router" />
+            <tag name="jms_serializer.handler" type="Seiffert\Bundle\BlogApiBundle\Entity\BlogPost" format="json" direction="serialization" method="serializeBlogPostFromJson" />
+        </service>
+    </services>
+
+</container>

@@ -1,0 +1,25 @@
+.navbar {
+  margin-top: @navbar-margin-top;
+  border: 0;
+
+  &.navbar-fixed-top {
+    margin-top: 0;
+  }
+
+  @media (min-width: @screen-sm-min){
+    .navbar-nav{
+      float:none;
+      margin: 0 auto;
+      display: table;
+      table-layout: fixed;
+    }
+  }
+
+  .navbar-nav > li > a {
+    background: @navbar-default-link-bg;
+  }
+}
+
+.navbar-fixed-top + #content {
+  margin-top: (@navbar-height + 2 * @navbar-margin-top);
+}
